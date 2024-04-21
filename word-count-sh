@@ -1,0 +1,1 @@
+cat the-great-gatsby.txt | tr '[A-Z]' '[a-z]' | tr -C '[a-z ]' -d | sed 's/ /\n/g' | sort | uniq -c | sort -nr
